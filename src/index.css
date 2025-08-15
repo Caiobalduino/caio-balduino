@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-slideUpFade {
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1s ease-in forwards;
+}
