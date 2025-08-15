@@ -1,7 +1,6 @@
 import React from "react";
-// import "../index.css";
 
-export function SplashScreen({ userName, fadeOut }) {
+export function SplashScreen({ fadeOut }) {
   return (
     <div
       className={`flex items-center justify-center h-screen transition-opacity duration-1000 ${fadeOut ? "opacity-0" : "opacity-100"}`}
