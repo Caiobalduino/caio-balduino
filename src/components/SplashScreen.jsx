@@ -1,16 +1,13 @@
 import React from "react";
 // import "../index.css";
 
-export function SplashScreen({ userName }) {
+export function SplashScreen({ userName, fadeOut }) {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1
-        className={`
-          text-white text-2xl font-bold
-          animate-slideUpFade
-        `}
-      >
-        Bem-vindo à minha área de trabalho{userName ? `, ${userName}` : ""}!
+    <div
+      className={`flex items-center justify-center h-screen transition-opacity duration-1000 ${fadeOut ? "opacity-0" : "opacity-100"}`}
+    >
+      <h1 className="text-white text-2xl font-bold animate-slideUpFade">
+        Bem-vindo à minha área de trabalho!
       </h1>
     </div>
   );
