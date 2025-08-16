@@ -16,15 +16,15 @@ export function Table() {
 
         {/* apresentação breve */}
         <h1 className="text-2xl font-semibold text-white">
-          Olá, eu sou <span className="text-blue-400">Caio Balduino</span>
+          Olá, eu sou <span className="text-blue-400 font-(family-name:--font-source)">Caio Balduino</span>
         </h1>
         <p className="text-gray-300 max-w-sm">
           Profissional de tecnologia com experiência em desenvolvimento web e
-          sólida formação acadêmica, em especialização em Big Data & Analytics.
+          sólida formação acadêmica, com especialização em Big Data & Analytics.
         </p>
 
         {/* botões */}
-        <div className="flex flex-col gap-4 w-full max-w-xs">
+        <div className="flex flex-col gap-4 w-full max-w-xs font-(family-name:--font-source)">
           <Button label="Sobre Mim" />
           <Button label="Experiências" />
           <Button label="Projetos" />
