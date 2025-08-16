@@ -2,7 +2,7 @@ import React from "react";
 
 export function Weather() {
   return (
-    <div className="p-4">
+    <div className="absolute top-4 left-1/2 -translate-x-1/2 p-4">
       <div className="container mx-auto flex justify-center md:justify-start">
         <div className="inline-flex items-center rounded-md bg-zinc-700">
           <span className="w-2 h-2 bg-blue-500 block rounded-full relative left-2"></span>
