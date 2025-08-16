@@ -75,7 +75,7 @@ export function Table() {
 
       {/* Modal  */}
       <Modal isOpen={openModal === "sobre"} onClose={handleClose}>
-        <h2 className="text-2xl text-blue-300 font-bold mb-4 text-center flex items-center justify-center gap-2">
+        <h2 className="text-2xl text-blue-300 font-bold mb-4 text-center flex items-center justify-center gap-2 font-(family-name:--font-source)">
           Sobre Mim <span>💡</span>
         </h2>
         <p className="text-gray-100 leading-relaxed text-justify">
@@ -105,12 +105,12 @@ export function Table() {
       </Modal>
 
       <Modal isOpen={openModal === "exp"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-2">Experiências</h2>
+        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">Experiências</h2>
         <p className="text-gray-200"></p>
       </Modal>
 
       <Modal isOpen={openModal === "projetos"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-4">Projetos</h2>
+        <h2 className="text-xl text-white font-bold mb-4 font-(family-name:--font-source)">Projetos</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((proj, idx) => (
@@ -120,7 +120,7 @@ export function Table() {
       </Modal>
 
       <Modal isOpen={openModal === "contato"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-2">Contato</h2>
+        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">Contato</h2>
         <p className="text-gray-200"></p>
       </Modal>
     </section>
