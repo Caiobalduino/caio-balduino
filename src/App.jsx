@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import { Table } from "./components/Table";
 import { SplashScreen } from "./components/SplashScreen";
+import { Weather } from "./components/Weather";
+import { Section } from "./Section";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -23,8 +25,8 @@ function App() {
   }, []);
 
   return (
-    <div className="m-0 p-0 box-border w-full h-screen bg-zinc-950">
-      {showSplash ? <SplashScreen fadeOut={fadeOut} /> : <Table />}
+    <div className="m-0 p-0 box-border w-full bg-zinc-950">
+      {showSplash ? <SplashScreen fadeOut={fadeOut} /> : <Section />}
     </div>
   );
 }
