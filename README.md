@@ -1,12 +1,31 @@
-# React + Vite
+# 🌐 Portfólio Minimalista
+![Portifólio Caio Balduino](image.png)
+Este é o meu portfólio pessoal desenvolvido em **React**, com foco em **minimalismo, performance e internacionalização**.  
+O objetivo é apresentar meus projetos de forma simples, elegante e responsiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Funcionalidades
+- Design minimalista e responsivo.
+- Suporte a múltiplos idiomas com **i18n** (a linguagem inicial é definida automaticamente pela do navegador do usuário).
+- Seção para apresentação pessoal.
+- Listagem de projetos com links diretos para repositórios e deploys.
+- Entre em contato comigo!
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
+- [React](https://react.dev/) – Biblioteca principal para construção da interface.
+- [TailwindCSS](https://tailwindcss.com/) – Estilização rápida e responsiva.
+- [i18next](https://www.i18next.com/) – Internacionalização (i18n).
+- [Vite](https://vitejs.dev/) – Build e ambiente de desenvolvimento rápido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```plaintext
+├── public/             # Arquivos públicos
+├── src/
+│   ├── assets/         # Imagens e ícones
+│   ├── components/     # Componentes reutilizáveis
+│   ├── i18n/           # Configuração de idiomas
+│   ├── App.jsx         # Página principal
+│   └── main.jsx        # Entrada do React
+└── package.json
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Lista de Projetos
+(A lista será atualizada conforme novos projetos forem adicionados independente da linguagem de programação.)
