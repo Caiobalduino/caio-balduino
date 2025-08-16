@@ -1,5 +1,7 @@
 # 🌐 Portfólio Minimalista
+
 ![Portifólio Caio Balduino](image.png)
+
 Este é o meu portfólio pessoal desenvolvido em **React**, com foco em **minimalismo, performance e internacionalização**.  
 O objetivo é apresentar meus projetos de forma simples, elegante e responsiva.
 
