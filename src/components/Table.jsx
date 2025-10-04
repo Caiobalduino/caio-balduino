@@ -105,12 +105,112 @@ export function Table() {
       </Modal>
 
       <Modal isOpen={openModal === "exp"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">Experiências</h2>
-        <p className="text-gray-200"></p>
+        <h2 className="text-2xl text-blue-300 font-bold mb-6 text-center">
+          Experiências 💼
+        </h2>
+
+        <div className="flex flex-col gap-6">
+          {/* Prefeitura */}
+          <div className="bg-white/5 border border-white/20 rounded-xl p-4 shadow-md">
+            <h3 className="text-lg font-semibold text-white">
+              Auxiliar Administrativo
+            </h3>
+            <p className="text-sm text-gray-400">
+              Prefeitura Municipal de Igarapava · Maio 2025 – Atual
+            </p>
+            <p className="text-gray-200 mt-2 text-justify">
+              Atuação no controle de estoque farmacêutico no sistema público de
+              saúde, organizando e registrando o inventário de medicamentos,
+              além de monitorar a distribuição de remédios gratuitos à
+              população.
+            </p>
+          </div>
+
+          {/* bootcamp */}
+          <div className="bg-white/5 border border-white/20 rounded-xl p-4 shadow-md">
+            <h3 className="text-lg font-semibold text-white">
+              Academy ERP & LowCode Solutions
+            </h3>
+            <p className="text-sm text-gray-400">
+              SoulCode Academy & KPMG · Jan 2025 – Abr 2025
+            </p>
+            <p className="text-gray-200 mt-2 text-justify">
+              Bootcamp focado em soluções ERP e LowCode, com experiências
+              práticas em SAP ABAP/BTP, Microsoft Power Platform (Power BI,
+              Power Apps, Power Automate), SQL Server e Node.js, aplicando
+              conceitos de automação, desenvolvimento de aplicações e integração
+              de sistemas.
+            </p>
+          </div>
+
+          {/* projeto que desenvolvi: Taskly */}
+          <div className="bg-gradient-to-r from-blue-900/40 to-blue-600/20 border border-blue-400/30 rounded-xl p-5 shadow-lg">
+            <h3 className="text-lg font-semibold text-blue-300">
+              Projeto Taskly - Gerenciamento de Tarefas
+            </h3>
+            <p className="text-sm text-gray-400">Mar 2025 – Abr 2025</p>
+            <p className="text-gray-200 mt-2 text-justify">
+              Sistema desenvolvido no projeto final do Bootcamp SoulCode & KPMG,
+              unindo tecnologias modernas para organizar tarefas, acompanhar
+              projetos e otimizar fluxos de trabalho.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 mt-2 text-sm">
+              <li>
+                <span className="text-blue-300 font-medium">SAP ABAP:</span>{" "}
+                criação e monitoramento de tarefas/projetos com tratamento de
+                exceções.
+              </li>
+              <li>
+                <span className="text-blue-300 font-medium">
+                  HTML, CSS, JS:
+                </span>{" "}
+                página web com identidade visual, usabilidade e formulário de
+                contato.
+              </li>
+              <li>
+                <span className="text-blue-300 font-medium">PowerApps:</span>{" "}
+                app integrado ao SAP para gerenciar e visualizar tarefas.
+              </li>
+            </ul>
+            <p className="text-gray-400 mt-3 text-sm italic">
+              Além do desenvolvimento técnico, foram trabalhadas competências
+              como resolução de problemas, trabalho em equipe, modelagem de
+              sistemas e integração entre plataformas.
+            </p>
+          </div>
+
+          {/* recomendações */}
+          <div className="bg-white/5 border border-white/20 rounded-xl p-4 shadow-md">
+            <h3 className="text-lg font-semibold text-white mb-3">
+              Recomendações ✨
+            </h3>
+            <blockquote className="border-l-4 border-blue-400 pl-3 mb-3">
+              <p className="text-gray-200 text-sm italic">
+                "Caio é um profissional dedicado, proativo e criativo. Sua
+                resiliência e colaboração foram essenciais para o sucesso do
+                projeto."
+              </p>
+              <p className="text-gray-400 text-xs mt-1">
+                — Leonardo R. Vergani
+              </p>
+            </blockquote>
+
+            <blockquote className="border-l-4 border-blue-400 pl-3">
+              <p className="text-gray-200 text-sm italic">
+                "Demonstra domínio técnico e mentalidade colaborativa. Sempre
+                atento aos detalhes, disposto a compartilhar conhecimento e
+                ajudar a equipe a evoluir."
+              </p>
+              <p className="text-gray-400 text-xs mt-1">— Carla Franco</p>
+            </blockquote>
+          </div>
+        </div>
       </Modal>
 
       <Modal isOpen={openModal === "projetos"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-4 font-(family-name:--font-source)">Projetos</h2>
+        <h2 className="text-xl text-white font-bold mb-4 font-(family-name:--font-source)">
+          Projetos
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((proj, idx) => (
@@ -120,7 +220,9 @@ export function Table() {
       </Modal>
 
       <Modal isOpen={openModal === "contato"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">Contato</h2>
+        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">
+          Contato
+        </h2>
         <p className="text-gray-200"></p>
       </Modal>
     </section>
