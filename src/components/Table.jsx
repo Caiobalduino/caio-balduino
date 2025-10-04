@@ -42,6 +42,17 @@ export function Table() {
     },
   ];
 
+  const EMAIL = "caiobalduinodev@hotmail.com";
+
+  const copy = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("E-mail copiado! 📋");
+    } catch {
+      alert("Não foi possível copiar agora.");
+    }
+  };
+
   return (
     <section className="flex justify-center items-center h-screen text-center">
       <div className="flex flex-col items-center gap-3">
@@ -220,10 +231,48 @@ export function Table() {
       </Modal>
 
       <Modal isOpen={openModal === "contato"} onClose={handleClose}>
-        <h2 className="text-xl text-white font-bold mb-2 font-(family-name:--font-source)">
+        <h2 className="text-2xl text-blue-300 font-bold mb-2 text-center">
           Contato
         </h2>
-        <p className="text-gray-200"></p>
+        <p className="text-gray-300 text-center mb-6">
+          Vamos conversar? Respondo rápido. 💬
+        </p>
+
+        {/* perfis profissionais */}
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href="https://github.com/Caiobalduino"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 
+                   text-gray-200 hover:bg-white/10 transition text-sm"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/caiobalduino/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 
+                   text-gray-200 hover:bg-white/10 transition text-sm"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <p className="text-sm text-gray-400 text-center">
+            Ou envie direto por e-mail:{" "}
+            <button
+              type="button"
+              onClick={() => copy("caiobalduinodev@hotmail.com")}
+              className="text-blue-300 hover:underline cursor-pointer"
+              title="Clique para copiar"
+            >
+              caiobalduinodev@hotmail.com
+            </button>
+          </p>
+        </div>
       </Modal>
     </section>
   );
