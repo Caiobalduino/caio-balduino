@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useI18n } from "../i18n";
 
 const ICONS = {
   0: "☀️", // clear sky
@@ -63,6 +64,8 @@ const DESC = {
 };
 
 export function Weather() {
+  const { t } = useI18n();
+  const weekday = new Intl.DateTimeFormat(t.locale, { weekday: "long" }).format(new Date());
   const [state, setState] = useState({
     day: new Intl.DateTimeFormat("pt-BR", { weekday: "long" }).format(
       new Date()
@@ -73,6 +76,7 @@ export function Weather() {
     loading: true,
     error: null,
   });
+
 
   useEffect(() => {
     let aborted = false;
@@ -142,7 +146,7 @@ export function Weather() {
 
           <div className="flex text-blue-300 divide-x-2 divide-zinc-900">
             <div className="px-4 py-2 capitalize font-(family-name:--font-source)">
-              {day}
+              {weekday}
             </div>
 
             <div className="px-4 py-2 min-w-[64px] text-center">
