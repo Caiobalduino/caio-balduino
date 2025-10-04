@@ -1,22 +1,35 @@
 # 🌐 Portfólio Minimalista
 
-![Portifólio Caio Balduino](image.png)
+![Portfólio Caio Balduino](image.png)
 
-Este é o meu portfólio pessoal desenvolvido em **React**, com foco em **minimalismo, performance e internacionalização**.  
-O objetivo é apresentar meus projetos de forma simples, elegante e responsiva.
+Este é o meu portfólio pessoal desenvolvido em **React**, com foco em **minimalismo, performance, responsividade e internacionalização**.  
+O objetivo é apresentar meus projetos e experiências de forma simples, elegante e acessível.
+
+---
 
 ## ✨ Funcionalidades
-- Design minimalista e responsivo.
-- Suporte a múltiplos idiomas com **i18n** (a linguagem inicial é definida automaticamente pela do navegador do usuário).
-- Seção para apresentação pessoal.
-- Listagem de projetos com links diretos para repositórios e deploys.
-- Entre em contato comigo!
+
+- 🎨 **Design minimalista e responsivo** – interface clara e adaptável para desktop e mobile.  
+- 🌍 **Internacionalização (i18n)** – suporte a **português e inglês**, com seleção manual (🇧🇷 PT / 🇺🇸 EN) e detecção automática pelo navegador.  
+- 👤 **Sobre Mim** – seção dedicada à minha apresentação pessoal e trajetória.  
+- 💼 **Experiências Profissionais** – cards detalhados com atividades, bootcamps e recomendações recebidas.  
+- 📂 **Projetos** – listagem de projetos com imagem, tecnologias utilizadas e link direto para deploy ou repositório.  
+- 📩 **Contato** – links para perfis profissionais e cópia rápida do meu e-mail com 1 clique.  
+- ☀️ **Clima Local** – componente dinâmico que exibe **dia da semana, temperatura e condição do tempo** de acordo com a localização do visitante.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
-- [React](https://react.dev/) – Biblioteca principal para construção da interface.
-- [TailwindCSS](https://tailwindcss.com/) – Estilização rápida e responsiva.
-- [i18next](https://www.i18next.com/) – Internacionalização (i18n).
-- [Vite](https://vitejs.dev/) – Build e ambiente de desenvolvimento rápido.
+
+- [**React**](https://react.dev/) – Biblioteca principal para construção da interface.  
+- [**Vite**](https://vitejs.dev/) – Ambiente de build e desenvolvimento rápido.  
+- [**TailwindCSS**](https://tailwindcss.com/) – Estilização ágil e responsiva.  
+- [**i18next**](https://www.i18next.com/) – Internacionalização (i18n).  
+- [**flag-icons**](https://github.com/lipis/flag-icons) – Ícones de bandeiras para seleção de idiomas.  
+- [**OpenWeather API**](https://openweathermap.org/) – Para exibir a previsão do tempo local.  
+- **HTML5 / CSS3 / JavaScript ES6+** – Base da estrutura e lógica.  
+
+---
 
 ```plaintext
 ├── public/             # Arquivos públicos
